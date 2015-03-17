@@ -11,8 +11,8 @@ body {
   font-family: 'Karla', sans-serif;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
+  background-color: #383737;
 }
 
 a {
@@ -27,7 +27,6 @@ a img  {
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   font-family: 'Montserrat';
@@ -41,12 +40,6 @@ a img  {
   z-index: 1000;
 }
 
-.illustration {
-  background-color: #4C5364;
-  width: 100%;
-  padding-bottom: 50px;
-  text-align: right;
-}
 
 .about {
 /*  background-color: #D57878;*/
@@ -59,10 +52,11 @@ a img  {
   border-radius: 3px;
   width:750px;
   margin: 0 auto;
+  margin-top: 200px;
   padding-top:15px;
   font-size:30px;
   background:#ccc;
-  height: 700px;
+  height: 20px;
   font-family:'Courier New';
   text-align:left;
   font-size:13px;
@@ -72,18 +66,15 @@ a img  {
 .console {
   width:670px;
   padding: 40px;
-  height: 620px;
+  height: 450px;
   margin:0 auto;
   background: black;
+  margin-bottom: 50px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 span.answer {
   color:limegreen;
-}
-
-.skills {
-  background-color: #ddd;
-  height: auto;
 }
 
 .tagline {
@@ -95,7 +86,18 @@ text-transform: uppercase;
 letter-spacing: 0.3em;
 }
 
+.blink {
+      animation: blink 1s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
 
-p.about-tag {
-  color: #d4d4d4;
-}
